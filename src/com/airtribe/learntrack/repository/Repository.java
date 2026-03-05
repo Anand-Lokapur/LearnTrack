@@ -1,0 +1,17 @@
+package com.airtribe.learntrack.repository;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface Repository<T,ID>{
+
+     void save(T entity);
+
+     T getById(ID id);
+     List<T> getAll();
+
+
+
+     void deactivate(ID id);
+
+}
